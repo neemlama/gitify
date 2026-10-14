@@ -1,5 +1,58 @@
 # Changelog
 
+## [7.10.0](https://github.com/gitify-app/gitify/compare/v7.9.0...v7.10.0) (2026-10-14)
+
+
+### 🚀 Features
+
+* **notifications:** rework hover actions and wrap metric pills ([#3407](https://github.com/gitify-app/gitify/issues/3407)) ([c9737b6](https://github.com/gitify-app/gitify/commit/c9737b6676bcce4daffbb4be1b990b175e90cb37))
+* **notifications:** rework hover actions into a full-height rail ([c9737b6](https://github.com/gitify-app/gitify/commit/c9737b6676bcce4daffbb4be1b990b175e90cb37))
+* **notifications:** show identifiers for releases and commits ([#3408](https://github.com/gitify-app/gitify/issues/3408)) ([3d6e444](https://github.com/gitify-app/gitify/commit/3d6e4442ce21446ae82c434bdc6b190ae19ec1b9))
+* **notifications:** support copilot agent session ([#3384](https://github.com/gitify-app/gitify/issues/3384)) ([4e3041e](https://github.com/gitify-app/gitify/commit/4e3041eecc42cc999b1f276ab43af22ff2fb9cc3))
+
+
+### 🐛 Bug Fixes
+
+* **ci:** stop tracking local Git worktrees ([f24dbab](https://github.com/gitify-app/gitify/commit/f24dbabd5705c413891b4b189ff4082dc0c498f3))
+* migrate to CSS-based Primer theme provider ([#3394](https://github.com/gitify-app/gitify/issues/3394)) ([98dd13d](https://github.com/gitify-app/gitify/commit/98dd13d14eca8179433defbed28daef1047f7e34))
+* **sonar:** handle app.whenReady rejection on startup (typescript:S9383) ([#3380](https://github.com/gitify-app/gitify/issues/3380)) ([50d7311](https://github.com/gitify-app/gitify/commit/50d7311c513501e0040b5898fc90110788d4dd23))
+* **sonar:** resolve floating promises (typescript:S9383) ([#3359](https://github.com/gitify-app/gitify/issues/3359)) ([9c0cc59](https://github.com/gitify-app/gitify/commit/9c0cc59aae69e5b9b1f4a512b86b1b91818b7472))
+* **sonar:** resolve nested ternary in review sort (typescript:S3358) ([#3376](https://github.com/gitify-app/gitify/issues/3376)) ([45891c3](https://github.com/gitify-app/gitify/commit/45891c3c6f4c217992cf206b59e4a0f32933d034))
+* **sonar:** resolve S9383 floating promises ([9c0cc59](https://github.com/gitify-app/gitify/commit/9c0cc59aae69e5b9b1f4a512b86b1b91818b7472))
+* stabilize account scopes icon components ([#3393](https://github.com/gitify-app/gitify/issues/3393)) ([a547cd8](https://github.com/gitify-app/gitify/commit/a547cd89004bd2960f12ad4ef639cf14caaa770c))
+* test helper ([e348056](https://github.com/gitify-app/gitify/commit/e348056b36dd312eaf18d1359669660050f7d3da))
+
+
+### 🧼 Code Refactoring
+
+* **renderer:** codify module boundaries and decompose notification state ([#3410](https://github.com/gitify-app/gitify/issues/3410)) ([bd0e08d](https://github.com/gitify-app/gitify/commit/bd0e08de65618e8348c6fc4e1d9593a8c2752b3a))
+* **renderer:** extract login validation into utils/auth ([#3413](https://github.com/gitify-app/gitify/issues/3413)) ([f7f9ba2](https://github.com/gitify-app/gitify/commit/f7f9ba2676e0ed5b4703df6f7a0bc8441d1d1485))
+* **renderer:** extract notification list builders into utils ([#3412](https://github.com/gitify-app/gitify/issues/3412)) ([e41ab92](https://github.com/gitify-app/gitify/commit/e41ab92173f5ffd63a836b1cde6fde4f9ed1c749))
+* **renderer:** relocate shortcut-registration store into stores ([#3411](https://github.com/gitify-app/gitify/issues/3411)) ([f25d64f](https://github.com/gitify-app/gitify/commit/f25d64fe3b634db026f14b0ff2cc8cb4643336ee))
+* **sonar:** avoid awaiting promises sequentially in loops (S9382) ([77a5fb8](https://github.com/gitify-app/gitify/commit/77a5fb87b48942344842d1fef723de9012d9f490))
+* **sonar:** avoid awaiting promises sequentially in loops (typescript:S9382) ([#3358](https://github.com/gitify-app/gitify/issues/3358)) ([77a5fb8](https://github.com/gitify-app/gitify/commit/77a5fb87b48942344842d1fef723de9012d9f490))
+* **sonar:** reduce NotificationList cognitive complexity (typescript:S3776) ([#3372](https://github.com/gitify-app/gitify/issues/3372)) ([2d1a4b5](https://github.com/gitify-app/gitify/commit/2d1a4b5cf683fb5f1a7f1aac587cf6c577d56c4e))
+
+
+### 📚 Documentation
+
+* add emoji headings to the README ([#3418](https://github.com/gitify-app/gitify/issues/3418)) ([a887e83](https://github.com/gitify-app/gitify/commit/a887e836125538de34ec50129a607c5828d2199d))
+* adopt the organization-wide code of conduct ([#3414](https://github.com/gitify-app/gitify/issues/3414)) ([c734d7a](https://github.com/gitify-app/gitify/commit/c734d7a878c37602179537c050cec9625457ed77))
+* emoji headings in the contributing guide ([#3419](https://github.com/gitify-app/gitify/issues/3419)) ([756a77d](https://github.com/gitify-app/gitify/commit/756a77dee1a0147d5c961a277c1117c2c774fd6f))
+
+
+### 🤖 Continuous Integration
+
+* refactor renovate.json configuration for clarity ([#3377](https://github.com/gitify-app/gitify/issues/3377)) ([d04db40](https://github.com/gitify-app/gitify/commit/d04db4028cd5534664faed52615ac46e797754fb))
+* teach actionlint the ubuntu-26.04-arm runner label ([#3375](https://github.com/gitify-app/gitify/issues/3375)) ([3110760](https://github.com/gitify-app/gitify/commit/31107609151aa027ea70e0a2ee46ead2bab39475))
+
+
+### 📦 Dependency Updates (Core)
+
+* **deps-core:** update @primer/react to v38.40.1 ([#3378](https://github.com/gitify-app/gitify/issues/3378)) ([36b6b22](https://github.com/gitify-app/gitify/commit/36b6b22f586ad34021f6ef735f12429465eef5e0))
+* **deps-core:** update electron to v44.7.0 ([#3398](https://github.com/gitify-app/gitify/issues/3398)) ([dccf749](https://github.com/gitify-app/gitify/commit/dccf749c8eae049b8decdaaa4372524e188b9b7a))
+* **deps-core:** update electron-menubar to v11.1.1 ([#3342](https://github.com/gitify-app/gitify/issues/3342)) ([261e656](https://github.com/gitify-app/gitify/commit/261e65657d385e5195a5c600d2d554de4db6f44f))
+
 ## [7.9.0](https://github.com/gitify-app/gitify/compare/v7.8.0...v7.9.0) (2026-10-04)
 
 
